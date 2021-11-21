@@ -29,7 +29,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    // AuthenticationModule,
+    AuthenticationModule,
     FunctionalityModule,
     BrowserAnimationsModule,
     MatSnackBarModule,
