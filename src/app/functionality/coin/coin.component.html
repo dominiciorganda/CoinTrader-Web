@@ -1,0 +1,31 @@
+<table class='data'>
+    <tr>
+    <td class='left'>
+        <img src={{getLogo(coinName)}} width="60%"
+        float="left">
+        
+        <h2 style="padding-top: 20px; font-weight: bold;">{{getCoinName(coinName)}}</h2>
+        
+    </td>
+    <td class='right'>
+        <div class='infos'>
+            <h5 align="right">Actual: {{actualCoin?.price | currency:'USD':'symbol':'1.2-2'}}</h5>
+            
+            <h5 align="right">Max: {{maxCoin?.price | currency:'USD':'symbol':'1.2-2'}}</h5>
+            
+            <h5 align="right">2021 Max: {{anualMaxCoin?.price | currency:'USD':'symbol':'1.2-2'}}</h5>
+            
+            <h5 align="right">2021 Min: {{anualMinCoin?.price | currency:'USD':'symbol':'1.2-2'}}</h5>
+        </div>
+    </td>
+</tr>
+</table>
+
+<div class='chart'>
+    <h5>Chart days: <input #chartDays type="number" id="chartDays" min='2' max='2000' value="32"
+            (input)="updateChart(chartDays.value)" /></h5>
+
+    <div>
+        <canvas id="chartCanvas" #chartCanvas></canvas>
+    </div>
+</div>

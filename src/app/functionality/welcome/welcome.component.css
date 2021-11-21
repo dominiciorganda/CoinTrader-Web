@@ -1,0 +1,57 @@
+.icon {
+    font-size: 150px;
+    padding-top: 100px;
+    
+}
+
+h4 {
+    padding-top: 30px;
+    font-style: italic;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+td {
+    height: fit-content;
+    width: fit-content;
+}
+
+.inner {  
+    display: inline-block;
+  }
+  
+  .outer {
+      padding-top: 50px;
+    width: 100%;
+  text-align: center;
+  }
+
+.right {
+    padding-left: 30px;
+}
+
+.left {
+    padding-right: 30px;
+}
+.center {
+    
+      
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+   
+  }
+
+  .name{
+      padding-top: 30px;
+      font-size: 40px;
+  }
+
+  img {
+      width:150px;
+      height: auto;
+  }

@@ -1,0 +1,48 @@
+.chart {
+    
+    padding: 70px 0;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+.chart h5 {
+    padding-top: 0;
+    padding-left: 330px;
+}
+
+.infos h4{
+    margin: 0 auto;
+    padding-right: 140px;
+}
+
+/* td {
+    /* padding-top: 50px;
+} */
+
+.left {
+    padding-right: 370px;
+    float: left;
+    text-align: center;
+}
+
+.right {
+    padding-right: 100px;
+    
+    text-align: center;
+}
+
+.data {
+    padding-top: 50px;
+    border-collapse: separate;
+    /* width: 70%; */
+    /* padding-right: 30px; */
+    /* padding-top: 50px; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+canvas{
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    }

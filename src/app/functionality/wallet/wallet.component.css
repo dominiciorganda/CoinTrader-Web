@@ -1,0 +1,122 @@
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  flex-direction: row;
+  padding: 10px;
+  background-color: 	#F8F8F8;
+  border-radius: 25px;
+}
+
+.container2 {
+  padding-top: 20px
+}
+
+.container:hover {
+  background-color: #E0E0E0;
+}
+
+.left {
+  padding-top: 1%;
+  padding-left: 30px;
+  align-items: center;
+  display: flex;
+  vertical-align: middle;
+  font-size: 0;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: center;
+  align-items: flex-start;
+  float: left;
+}
+
+.right {
+    width:inherit;
+    max-width:inherit;
+  padding-top: 1%;
+  padding-right: 10px;
+  display: flex;
+  font-size: 0;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: center;
+  align-items: flex-end;
+  float: right;
+
+}
+
+.bitcoin {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.actual {
+  padding-top: 10px;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.amount {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.value {
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+
+h2 {
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.inner {  
+  display: inline-block;
+}
+
+.outer {
+    padding-top: 50px;
+  width: 100%;
+text-align: center;
+}
+
+.icon {
+  font-size: 150px;
+  padding-top: 80px;
+  
+}
+
+.icon2 {
+  font-size: 150px;
+  padding-top: 20px;
+  
+}
+
+.name{
+  padding-top: 30px;
+  font-size: 40px;
+}
+
+.name2{
+  font-size: 40px;
+}
+
+.img {
+  width:150px;
+  height: auto;
+}
+
+td {
+  padding: 30px ;
+}
+
+.center {
+   width: fit-content;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}

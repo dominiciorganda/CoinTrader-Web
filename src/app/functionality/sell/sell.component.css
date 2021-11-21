@@ -1,0 +1,152 @@
+input {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.example-card {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  text-align: center;
+}
+
+.name {
+  padding-top: 30px;
+  font-size: 40px;
+}
+
+.icon {
+  font-size: 150px;
+  padding-top: 80px;
+
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  flex-direction: row;
+  padding: 10px;
+  background-color: #F8F8F8;
+  border-radius: 25px;
+}
+
+.container3 {
+  padding-top: 100px;
+  margin: auto;
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  flex-direction: row;
+  /* padding: 10px; */
+  background-color: #ffffff;
+  border-radius: 25px;
+}
+
+button {
+  margin:0 auto;
+  display:block;
+  padding-top: 50px;
+}
+
+.container2 {
+
+  max-width: 300px;
+  padding-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container2 h2 {
+  text-align: center;
+}
+
+.container:hover {
+  background-color: #E0E0E0;
+}
+
+.left {
+  padding-top: 1%;
+  padding-left: 30px;
+  align-items: center;
+  display: flex;
+  vertical-align: middle;
+  font-size: 0;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: center;
+  align-items: flex-start;
+  float: left;
+}
+
+.left2 {
+  padding-top: 1%;
+  padding-left: 30px;
+  align-items: center;
+  display: flex;
+  vertical-align: middle;
+  font-size: 30px;
+  font-weight: bold;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: center;
+  align-items: flex-start;
+  float: left;
+}
+
+.right {
+  width: inherit;
+  max-width: inherit;
+  padding-top: 1%;
+  padding-right: 10px;
+  display: flex;
+  font-size: 0;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: center;
+  align-items: flex-end;
+  float: right;
+
+}
+
+
+.right2 {
+  position: relative;
+  width: inherit;
+  max-width: inherit;
+  padding-top: 1%;
+  padding-right: 10px;
+  display: flex;
+  font-size: 0;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: center;
+  align-items: flex-end;
+  float: right;
+
+}
+
+.bitcoin {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.actual {
+  padding-top: 10px;
+  font-size: 15px;
+}
+
+.amount {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.value {
+  padding-top: 20px;
+  font-size: 14px;
+}

@@ -1,0 +1,59 @@
+<!-- <form>
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input type="email" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Enter username"
+            [(ngModel)]="username" name="username">
+
+    </div>
+
+
+    <div class="form-group">
+        <label for="Email">Email</label>
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email"
+            [(ngModel)]="email" name="email">
+
+    </div>
+
+
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Password" [(ngModel)]='password'
+            name='password'>
+    </div>
+
+    <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="confirmPassword" class="form-control" id="confirmPassword" placeholder="Confirm password" [(ngModel)]='confirmPassword'
+            name='confirmPassword'>
+    </div>
+
+    <button type="submit" class="btn btn-primary" (click)='onRegister()'>Register</button>
+</form> -->
+
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+   <!-- <h2>Register</h2> -->
+     
+      
+      <br>
+      <div class="fadeIn first">
+        <img src="assets/log.png" id="icon"/>
+      </div>
+      <br>
+      
+      <!-- Login Form -->
+      <form>
+        <input type="email" id="username" class="fadeIn second" name="username" [(ngModel)]="username" placeholder="Enter username">
+        <input type="email" id="email" class="fadeIn second" name="username" [(ngModel)]="email" placeholder="Enter email">
+        <input type="password" id="password" class="fadeIn third" name="username" [(ngModel)]='password' placeholder="Password">
+        <input type="password" id="confirmPassword" class="fadeIn third" name="username" [(ngModel)]='confirmPassword' placeholder="Confirm password">
+        <button type="submit" class="fadeIn fourth" (click)='onRegister()' >Register</button>
+      </form>
+      <!-- Remind Passowrd -->
+      <div id="formFooter">
+        <p>Already have an account? <a class="underlineHover" routerLink='../login'>Log in</a></p>
+    </div>
+    </div>
+  </div>
+
+  

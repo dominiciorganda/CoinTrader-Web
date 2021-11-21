@@ -1,0 +1,73 @@
+<!-- <div class="mx-auto">
+
+    <div class="card border-primary bg-primary mb-3" style="max-width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title text-white">{{title}}</h5>
+        <p class="card-text text-white">{{subtitle}} </p>
+        <div class="btn-toolbar">
+  
+          <button routerLink='/login' class="btn btn-warning">Login</button>
+          <button routerLink='/register' class="btn btn-warning">Register</button>
+  
+  
+        </div>
+      </div>
+    </div>
+  
+  </div>
+   -->
+
+   <mat-toolbar color="primary" class="expanded-toolbar">
+    <span>
+      <button mat-button routerLink="/">{{title}}</button>
+      <button mat-button routerLink="/"><mat-icon>home</mat-icon></button>
+    </span>
+    <div fxLayout="row" fxShow="false" fxShow.gt-sm>
+      <button mat-button routerLink="/login" >
+        <mat-icon>power_settings_new</mat-icon>
+        Login
+      </button>
+      <button mat-button routerLink="/register">
+        <mat-icon>account_box</mat-icon>
+        Register
+      </button>
+      <button mat-button >
+        <mat-icon>exit_to_app</mat-icon>
+        Logout
+      </button>
+     
+    </div>
+   
+  </mat-toolbar>
+
+
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+      
+      <br>
+      <div class="fadeIn first">
+        <img src="assets/log.png" id="icon"/>
+        <h4>{{subtitle}}</h4>
+      </div>
+      
+
+
+      <br>
+      <span>        
+        <button type="submit" class="fadeIn fourth" routerLink="/login" >Log in</button>
+        
+        <button type="submit" class="fadeIn fourth" routerLink="/register" >Sign up</button>
+      </span>
+  
+        <!-- Remind Passowrd -->
+      <div id="formFooter">
+        <p>Buy and sell crypto through built-in wallet</p>
+        <br>
+        <p>Get investment advice from the built-in ai </p>
+      </div>
+    </div>
+  </div>
+
+
+  

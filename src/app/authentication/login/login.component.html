@@ -1,0 +1,42 @@
+<!-- <form>
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="email" class="form-control" id="username" 
+      aria-describedby="emailHelp" placeholder="Enter username" 
+      [(ngModel)]="username" name="username">
+     
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control"
+       id="password" placeholder="Password"
+        [(ngModel)]='password' name='password'>
+    </div>
+    
+    <button type="submit" class="btn btn-primary" (click)='onSubmit()' >Submit</button>
+  </form> -->
+
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+      
+      <br>
+      <div class="fadeIn first">
+        <img src="assets/log.png" id="icon"/>
+      </div>
+      <br>
+      <!-- Login Form -->
+      <form>
+        <input type="email" id="username" class="fadeIn second" name="username" [(ngModel)]="username" placeholder="Username">
+        <input type="password" id="password" class="fadeIn third" name="username" [(ngModel)]='password' placeholder="Password">
+        <button type="submit" class="fadeIn fourth" (click)='onSubmit()' >Log in</button>
+      </form>
+      <!-- Remind Passowrd -->
+      <div id="formFooter">
+        <a class="underlineHover" href="#">Forgot Password?</a>
+        <br>
+        <br>
+        <p>Don't have an account? <a class="underlineHover" routerLink='../register'>Register now</a></p>
+      </div>
+    </div>
+  </div>

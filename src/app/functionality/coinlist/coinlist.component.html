@@ -1,0 +1,208 @@
+<div class="container">
+   <div class="vertical-center">
+     <p>Select a coin</p>
+   </div>
+ </div>
+
+<table class='cards'>
+   <tr>
+      <td (click)="onClick('bitcoin')"> 
+         <div class="btc" >
+            <div class="asset-info">
+               <div class="title">
+                  <img src="https://s3.us-east-2.amazonaws.com/nomics-api/static/images/currencies/btc.svg" width="15%"
+                     float="left">
+                  <div class='left'>
+                     <h1 class="header"><b>Bitcoin</b></h1>
+                  </div>
+               </div>
+               <div class="right">
+                  <div class="details">
+                     <h2 class="asset-price" id="btcPrice"><b>{{btcPrice}}</b></h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <canvas id="btcChart" #btcChart></canvas>
+
+      </td>
+
+      <td (click)="onClick('ethereum')"> 
+         <div class="ethereum" >
+            <div class="asset-info">
+               <div class="title">
+                  <img src="https://s3.us-east-2.amazonaws.com/nomics-api/static/images/currencies/eth.svg" width="15%"
+                     float="left">
+                  <div class='left'>
+                     <h1 class="header"><b>Ethereum</b></h1>
+                  </div>
+               </div>
+               <div class="right">
+                  <div class="details">
+                     <h2 class="asset-price" id="ethPrice"><b>{{ethPrice}}</b></h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <canvas id="ethChart" #ethChart></canvas>
+
+      </td>
+
+      <td (click)="onClick('elrond')"> 
+         <div class="elrond" >
+            <div class="asset-info">
+               <div class="title">
+                  <img src="https://cryptologos.cc/logos/elrond-egld-egld-logo.svg?v=014" width="15%"
+                     float="left">
+                  <div class='left'>
+                     <h1 class="header"><b>Elrond</b></h1>
+                  </div>
+               </div>
+               <div class="right">
+                  <div class="details">
+                     <h2 class="asset-price" id="erdPrice"><b>{{erdPrice}}</b></h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <canvas id="erdChart" #erdChart></canvas>
+
+      </td>
+
+   </tr>
+
+   <tr>
+      <td (click)="onClick('dash')"> 
+         <div class="ethereum" >
+            <div class="asset-info">
+               <div class="title">
+                  <img src="https://s3.us-east-2.amazonaws.com/nomics-api/static/images/currencies/dash.svg" width="15%"
+                     float="left">
+                  <div class='left'>
+                     <h1 class="header"><b>Dash</b></h1>
+                  </div>
+               </div>
+               <div class="right">
+                  <div class="details">
+                     <h2 class="asset-price" id="dashPrice"><b>{{dashPrice}}</b></h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <canvas id="dashChart" #dashChart></canvas>
+
+      </td>
+
+      <td (click)="onClick('dogecoin')"> 
+         <div class="btc" >
+            <div class="asset-info">
+               <div class="title">
+                  <img src="https://cryptologos.cc/logos/dogecoin-doge-logo.svg?v=014" width="15%"
+                     float="left">
+                  <div class='left'>
+                     <h1 class="header"><b>Dogecoin</b></h1>
+                  </div>
+               </div>
+               <div class="right">
+                  <div class="details">
+                     <h2 class="asset-price" id="dogePrice"><b>{{dogePrice}}</b></h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <canvas id="dogeChart" #dogeChart></canvas>
+
+      </td>
+
+      <td (click)="onClick('filecoin')"> 
+         <div class="ethereum" >
+            <div class="asset-info">
+               <div class="title">
+                  <img src="https://cryptologos.cc/logos/filecoin-fil-logo.svg?v=014" width="15%"
+                     float="left">
+                  <div class='left'>
+                     <h1 class="header"><b>Filecoin</b></h1>
+                  </div>
+               </div>
+               <div class="right">
+                  <div class="details">
+                     <h2 class="asset-price" id="filPrice"><b>{{filPrice}}</b></h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <canvas id="filChart" #filChart></canvas>
+
+      </td>
+
+
+   </tr>
+
+   <tr>
+      <td (click)="onClick('bitcoincash')"> 
+         <div class="bch" >
+            <div class="asset-info">
+               <div class="title">
+                  <img src="https://s3.us-east-2.amazonaws.com/nomics-api/static/images/currencies/bch.svg" width="15%"
+                     float="left">
+                  <div class='left'>
+                     <h1 class="header"><b>Bitcoin Cash</b></h1>
+                  </div>
+               </div>
+               <div class="right">
+                  <div class="details">
+                     <h2 class="asset-price" id="bchPrice"><b>{{bchPrice}}</b></h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <canvas id="bchChart" #bchChart></canvas>
+
+      </td>
+
+      <td (click)="onClick('litecoin')"> 
+         <div class="elrond" >
+            <div class="asset-info">
+               <div class="title">
+                  <img src="https://s3.us-east-2.amazonaws.com/nomics-api/static/images/currencies/ltc.svg" width="15%"
+                     float="left">
+                  <div class='left'>
+                     <h1 class="header"><b>Litecoin</b></h1>
+                  </div>
+               </div>
+               <div class="right">
+                  <div class="details">
+                     <h2 class="asset-price" id="ltcPrice"><b>{{ltcPrice}}</b></h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <canvas id="ltcChart" #ltcChart></canvas>
+
+      </td>
+
+      <td (click)="onClick('binancecoin')"> 
+         <div class="btc" >
+            <div class="asset-info">
+               <div class="title">
+                  <img src="https://s3.us-east-2.amazonaws.com/nomics-api/static/images/currencies/bnb.svg" width="15%"
+                     float="left">
+                  <div class='left'>
+                     <h1 class="header" style="font-size: medium;"><b>Binance coin</b></h1>
+                  </div>
+               </div>
+               <div class="right">
+                  <div class="details">
+                     <h2 class="asset-price" id="bnbPrice"><b>{{bnbPrice}}</b></h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <canvas id="bnbChart" #bnbChart></canvas>
+
+      </td>
+
+
+   </tr>
+
+</table>

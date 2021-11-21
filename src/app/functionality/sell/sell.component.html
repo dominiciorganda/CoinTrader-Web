@@ -1,0 +1,57 @@
+
+<div class="container3" *ngIf='this.coinName'>
+    <img [src]='getLogo(this.coinName)' width="90" height="auto" >
+    <div class="left2">
+        {{getCoinName(this.coinName)}}
+
+    </div>
+    <div class="right2">
+        <h3>{{coinAmount}} {{mapCoinNameToShortcut(this.coinName).toUpperCase()}}</h3>
+
+    </div>
+</div>
+
+
+<div class='container2'>
+    <h2 *ngIf='!showCard' (click)='changeCard()'>Choose coin</h2>
+    <div *ngIf='!showCard'>
+        <div>
+        <input type="number" min='0'  (keyup)='onChange($event)' [(ngModel)]='inputAmount'>
+        <div>{{actualValue}} USD</div>
+        </div>
+        <input type="text" readonly value={{sellAmount}}>
+    </div>
+
+</div>
+
+<mat-card class="example-card" *ngIf='showCard'>
+    <mat-card-title class='title'>Choose coin</mat-card-title>
+    <mat-card-content>
+        <div *ngFor='let coin of walletCoins'>
+
+            <div class="container" (click)='chooseCoin(coin.coinName.toLowerCase())'>
+                <img [src]='getLogo(coin.coinName.toLowerCase())' width="90" height="auto" float="left">
+                <div class="left">
+                    <div class="bitcoin">{{getCoinName(coin.coinName.toLowerCase())}}</div>
+
+                </div>
+                <div class="right">
+                    <div class="amount">{{mapCoinNameToShortcut(coin.coinName).toUpperCase()}}</div>
+
+                </div>
+            </div>
+            <br>
+
+        </div>
+
+    </mat-card-content>
+</mat-card>
+
+
+<button mat-button (click)='onSell()' >
+    <div class='icon'>
+        <mat-icon [inline]="true">attach_money</mat-icon>
+      </div>
+
+      <div class="name"> Sell</div>
+</button>

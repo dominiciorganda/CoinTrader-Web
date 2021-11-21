@@ -1,0 +1,78 @@
+<div class="outer">
+    <div class='inner'>
+        <h2>Username: @{{username}}</h2>
+        <br>
+        <h2>Money: ${{money}}</h2>
+    </div>
+</div>
+
+<table class="center">
+    <tr>
+        <td>
+            <button mat-button routerLink="/analytics">
+                <div class='icon'>
+                    <mat-icon [inline]="true">insert_chart</mat-icon>
+                  </div>
+          
+                  <div class="name"> Analytics</div>
+            </button>
+        </td>
+        <td>
+            <button mat-button routerLink="/coinList">
+                <div class='icon'>
+                    <mat-icon [inline]="true">format_list_bulleted</mat-icon>
+                  </div>
+          
+                  <div class="name"> CoinList</div>
+            </button>
+        </td>
+        <td>
+            <button mat-button routerLink="/sell">
+                <div class='icon'>
+                    <mat-icon [inline]="true">monetization_on</mat-icon>
+                  </div>
+          
+                  <div class="name"> Sell</div>
+            </button>
+        </td>
+        <td>
+            <button mat-button routerLink="/buy">
+                <div class='icon2'>
+                    <img src='/assets/sell.png' class='img'>
+                  </div>
+          
+                  <div class="name2">Buy</div>
+            </button>
+        </td>
+        <td>
+            <button mat-button routerLink="/topup">
+                <div class='icon2'>
+                    <img src='/assets/topup.png' class='img'>
+                  </div>
+          
+                  <div class="name2">Topup</div>
+                
+            </button>
+        </td>
+    </tr>
+</table>
+
+
+<div *ngIf='walletCoins' class='container2'>
+    <div *ngFor='let walletCoin of walletCoins'>
+
+        <div class="container">
+            <img [src]='getLogo(walletCoin)' width="90" height="auto" float="left">
+            <div class="left">
+                <div class="bitcoin">{{walletCoin.coinName}}</div>
+                <div class="actual">{{walletCoin.actualPrice}} USD</div>
+            </div>
+            <div class="right">
+                <div class="amount">{{walletCoin.amount}} {{mapCoinNameToShortcut(walletCoin).toUpperCase()}}</div>
+                <div class="value">{{walletCoin.value}} USD</div>
+            </div>
+        </div>
+        <br>
+
+    </div>
+</div>

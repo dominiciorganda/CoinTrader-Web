@@ -1,0 +1,58 @@
+<div class="outer">
+  <div class='inner'>
+    <h2>Welcome @{{username}}</h2>
+    <h4>Which coins will you trade today?</h4>
+  </div>
+</div>
+
+<table class="center">
+  <tr>
+    <td class='left'>
+      <button mat-button routerLink="/coinList">
+        <div class='icon'>
+          <mat-icon [inline]="true">format_list_bulleted</mat-icon>
+        </div>
+
+        <div class="name">Coinlist</div>
+
+      </button>
+    </td>
+    <td class='right'>
+
+      <button mat-button routerLink="/wallet">
+        <div class='icon'>
+          <mat-icon [inline]="true">account_balance_wallet</mat-icon>
+        </div>
+
+        <div class="name">Wallet</div>
+
+
+      </button>
+    </td>
+  </tr>
+
+  <tr>
+    <td class='left'>
+      <button mat-button routerLink="/settings">
+        <div class='icon'>
+          <img src='/assets/usersettings.png'>
+        </div>
+
+        <div class="name">Account</div>
+
+      </button>
+    </td>
+    <td class='right'>
+
+      <button mat-button routerLink="/home">
+        <div class='icon'>
+          <img src='/assets/logout.png'>
+        </div>
+
+        <div class="name">Logout</div>
+
+
+      </button>
+    </td>
+  </tr>
+</table>
